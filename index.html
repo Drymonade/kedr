@@ -5,8 +5,14 @@
         <meta http-equiv="X-UA-Compatible">
         <title>Keras Digit Recognizer</title>
         <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
     </head>
     <body>
-        
+        <div class="CanvasContainer">
+            <canvas id="drawingCanvas" width="300" height="300"></canvas>   
+        </div>
+        <div class="Toolbar">
+            <button onclick="saveCanvas()">Recognize!</button>
+        </div>
     </body>
 </html>
