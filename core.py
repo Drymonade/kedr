@@ -4,15 +4,21 @@ np.random.seed(1337)  # for reproducibility
 from keras.models import load_model
 from keras.preprocessing.image import img_to_array, load_img
 
-from flask import Flask
+from flask import Flask, render_template, url_for, redirect
 
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+
 def recognize(img):
-    model = load_model("my_model.h5") 
+    model = load_model("nn_model.h5") 
     result = model.predict(img)
     return result
        
+
 def max_index(arr):
     max_val = -1
     max_i = 0
