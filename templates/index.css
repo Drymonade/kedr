@@ -30,26 +30,3 @@ canvas {
     border: 1px dashed black;
 }
 
-img {
-    padding: 2px;
-    border: 2px solid #F2F7FE;
-}
-
-img:hover {
-    border: 2px groove #E4F0FE;
-    background: white;
-}
-
-
-img.Selected {
-    border: 2px groove #E4F0FE;
-}
-
-#savedCopyContainer {
-    display: none;
-}
-
-#savedCopyContainer img {
-    width: 250px;
-    height: 150px;
-}

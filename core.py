@@ -16,7 +16,7 @@ def index():
 def recognize(img):
     model = load_model("nn_model.h5") 
     result = model.predict(img)
-    return result
+    return max_index(result)
        
 
 def max_index(arr):
@@ -45,17 +45,5 @@ def preprocess_img(image):
     return result
     
 
-def print_img(img):
-    for i in range(28):
-        string = ""
-        for j in range(28):
-            p = int(img[28*i+j])
-            if p == 0:
-                string += " "
-            else:
-                string += str(p)
-        print(string)    
-
-        
 if __name__ == "__main__":
     pass
