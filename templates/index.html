@@ -4,16 +4,21 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible">
         <title>Keras Digit Recognizer</title>
-        <link rel="stylesheet" href="static/index.css">
-        <script src="static/index.js"></script>
+        <link rel="stylesheet" href="/static/index.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="/static/index.js"></script>
     </head>
     <body>
         <div class="CanvasContainer">
             <canvas id="drawingCanvas" width="300" height="300"></canvas>   
         </div>
+        
         <div class="Toolbar">
-            <button onclick="saveCanvas()">Recognize!</button>
+            <button onclick="SendRequest()">Recognize!</button>
             <button onclick="clearCanvas()">Clear</button>
+        </div>
+        <div>
+            <label id="Answer"></label>
         </div>
     </body>
 </html>
