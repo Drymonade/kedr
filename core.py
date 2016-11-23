@@ -9,6 +9,7 @@ from PIL import Image
 from io import BytesIO
 
 app = Flask(__name__)
+model = load_model("C:\kedr\\nn_model.h5") 
 
 @app.route('/', methods = ["GET", "POST"])
 def index():
@@ -16,14 +17,12 @@ def index():
     if data != None:
         img = preprocess_img(data["ImageData"])
         result = recognize(img) 
-        print(result)
         return json.dumps({'answer' : str(result)})
     else:
         return render_template('index.html')
 
 
 def recognize(img):
-    model = load_model("C:\kedr\\nn_model.h5") 
     result = model.predict(img)[0]
     return max_index(result)
        
@@ -40,6 +39,7 @@ def max_index(arr):
         
 def preprocess_img(image):
     imgdata = base64.b64decode(image)
+    
     loaded_image = Image.open(BytesIO(imgdata))
     loaded_image.save("C:\\kedr\\test.png")
     

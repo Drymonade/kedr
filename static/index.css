@@ -2,30 +2,39 @@ body {
     background: white;
 }
 
-.Toolbar {
-    float: left;
-    font-family: 'Trebuchet MS'; 
-    font-size: 14px;
-    font-variant: small-caps;
-    text-align: center;
-    background: #F2F7FE;
-    padding: 10px 15px 3px 10px;
-    margin-bottom: 1px;
-    margin-right: 1px;
-    border: 1px solid #7B899B;
-}
-
-.Toolbar button {
-    padding: 6px;
-    margin: 7px 2px;
-    font-variant: normal;
-    font-size: 12px;
-}
-
-.CanvasContainer {
-    clear: both;
-}
-
 canvas {
     border: 1px dashed black;
+}
+
+.Result {
+    font-size: 200px;
+    font-family: 'Trebuchet MS';
+}
+
+.MainTable {
+    width: 100%;
+}
+
+.MiddleContent {
+    height: 350px;
+    vertical-align: center;
+}
+
+.Header {
+    font-family: 'Trebuchet MS';
+    font-size: 42px; 
+    background: black;
+    text-align: center;
+    color: white;
+    height: 100px; 
+}
+
+.RecognizeButton {
+    font-size: 32px;
+    font-family: 'Trebuchet MS';
+}
+
+.ClearButton {
+    font-size: 20px;
+    font-family: 'Trebuchet MS';
 }

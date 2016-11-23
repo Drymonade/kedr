@@ -4,7 +4,7 @@ var context;
 function draw(e) {
     if (isDrawing === true) {   
         var x = e.pageX - canvas.offsetLeft;
-        var y = e.pageY - canvas.offsetTop;
+        var y = e.pageY - canvas.offsetTop - 150;
 		
 		context.lineTo(x, y);
 		context.stroke();
@@ -23,10 +23,6 @@ function stopDrawing () {
 
 function clearCanvas () {
 	context.clearRect(0, 0, canvas.width, canvas.height);
-}
-
-function saveCanvas () {
-    alert(canvas.toDataURL());
 }
 
 function scaleCanvas (canvas, width, height) {
@@ -61,9 +57,7 @@ function SendRequest(){
                 $("#Answer").text(response.answer);
             }
      });
-    
 }
-
 
 window.onload = function () {
     
@@ -71,7 +65,7 @@ window.onload = function () {
     context = canvas.getContext("2d");
     
     context.strokeStyle = 'rgb(0,0,0)';
-    context.lineWidth = 5;
+    context.lineWidth = 15;
     
     canvas.onmousedown = startDrawing;
     canvas.onmouseup = stopDrawing;

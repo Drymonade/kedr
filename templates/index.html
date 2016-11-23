@@ -9,16 +9,38 @@
         <script type="text/javascript" src="/static/index.js"></script>
     </head>
     <body>
-        <div class="CanvasContainer">
-            <canvas id="drawingCanvas" width="300" height="300"></canvas>   
-        </div>
-        
-        <div class="Toolbar">
-            <button onclick="SendRequest()">Recognize!</button>
-            <button onclick="clearCanvas()">Clear</button>
-        </div>
-        <div>
-            <label id="Answer"></label>
-        </div>
+         <table class="MainTable">
+            <tr class="Header">
+                <td colspan=3>
+                    Recognize your own handwritten digits!
+                </td>
+            </tr>
+            <tr class="MiddleContent">
+                <td width=40%>
+                    <div class="CanvasContainer" align=center>
+                        <canvas id="drawingCanvas" width="300" height="300"></canvas>   
+                    </div>
+                </td>
+                <td width=20% rowspan=2>
+                    <div class="Toolbar" align=center>
+                        <button class="RecognizeButton" onclick="SendRequest()">Recognize!</button>
+                    </div>
+                </td>
+                <td rowspan=2>
+                    <div class="Result" align=center>
+                        <label id="Answer">5</label>
+                    </div>
+                </td>
+            </tr>
+            <tr class="BottomContent" height=50px>
+              <td>
+                <div class="ClearButtonDiv" align=center>
+                  <button class="ClearButton" onclick="clearCanvas()">Clear</button>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+        </table>
     </body>
 </html>
