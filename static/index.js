@@ -4,7 +4,7 @@ var context;
 function draw(e) {
     if (isDrawing === true) {   
         var x = e.pageX - canvas.offsetLeft;
-        var y = e.pageY - canvas.offsetTop - 150;
+        var y = e.pageY - canvas.offsetTop - 100;
 		
 		context.lineTo(x, y);
 		context.stroke();
@@ -14,7 +14,7 @@ function draw(e) {
 function startDrawing (e) {
 	isDrawing = true;
 	context.beginPath();
-	context.moveTo(e.pageX - canvas.offsetLeft, e.pageY - canvas.offsetTop);
+	context.moveTo(e.pageX - canvas.offsetLeft, e.pageY - canvas.offsetTop - 100);
 }
 
 function stopDrawing () {
