@@ -40,16 +40,12 @@ def max_index(arr):
 def preprocess_img(image):
     imgdata = base64.b64decode(image)
     
-    loaded_image = Image.open(BytesIO(imgdata))
-    loaded_image.save("C:\\kedr\\test.png")
-    
-    im = Image.open("C:\\kedr\\test.png")
+    im = Image.open(BytesIO(imgdata))
+   
     bg = Image.new("RGB", im.size, (255,255,255))
     bg.paste(im,im)
-    bg.save("C:\\kedr\\test.png")
     
-    img = load_img("C:\\kedr\\test.png")
-    img = img_to_array(img)
+    img = img_to_array(bg)
     img /= 255
     result = []
     
