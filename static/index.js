@@ -66,6 +66,7 @@ window.onload = function () {
     
     context.strokeStyle = 'rgb(0,0,0)';
     context.lineWidth = 15;
+    context.lineCap = "round";
     
     canvas.onmousedown = startDrawing;
     canvas.onmouseup = stopDrawing;
