@@ -16,10 +16,10 @@ This is a package list that provides me a workable environment. Some troubles ca
 
 ## Launch
 
-There is only unstable version of kedr, so it's needed to unpack repository at C:\kedr only (I'm so sorry for that). After unpacking just type in cmd:
+To launch server it's needed to unpack repository to some folder and just type in cmd from there:
 
 ```bash
 python core.py
 ```
 
-Then there is an access to http://127.0.0.1:5000. Enjoy it!
+Then there will be an access to http://127.0.0.1:5000. Enjoy it!
