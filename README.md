@@ -13,3 +13,13 @@ This is a package list that provides me a workable environment. Some troubles ca
 3. Pillow 3.3.1
 4. Flask 0.11.1 + Flask-Cors 2.1.2
 5. h5py 2.6.0
+
+## Launch
+
+There is only unstable version of kedr, so it's needed to unpack repository at C:\kedr only (I'm so sorry for that). After unpacking just type in cmd:
+
+'''bash
+python core.py
+'''
+
+Then there is an access to http://127.0.0.1:5000. Enjoy it!
