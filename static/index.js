@@ -54,9 +54,15 @@ function SendRequest(){
             dataType: "json",    
             contentType: "application/json; charset=utf-8",
             success: function(response) {
-                $("#Answer").text(response.answer);
-            }
-     });
+                $("#Answer").animate({
+                opacity: 0.0,
+                }, 700, function() {
+                     $("#Answer").text(response.answer);
+                     $("#Answer").animate({ opacity: 1 }, 700 );
+                }
+     );
+}
+    });
 }
 
 window.onload = function () {
