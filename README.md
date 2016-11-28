@@ -18,8 +18,8 @@ This is a package list that provides me a workable environment. Some troubles ca
 
 There is only unstable version of kedr, so it's needed to unpack repository at C:\kedr only (I'm so sorry for that). After unpacking just type in cmd:
 
-'''bash
+```bash
 python core.py
-'''
+```
 
 Then there is an access to http://127.0.0.1:5000. Enjoy it!
