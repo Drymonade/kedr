@@ -9,7 +9,7 @@ from PIL import Image
 from io import BytesIO
 
 app = Flask(__name__)
-model = load_model("C:\kedr\\nn_model.h5") 
+model = load_model("nn_model.h5") 
 
 @app.route('/', methods = ["GET", "POST"])
 def index():

@@ -11,30 +11,30 @@
     <body>
          <table class="MainTable">
             <tr class="Header">
-                <td colspan=3>
-                    Recognize your own handwritten digits!
-                </td>
+                <td colspan=3>Recognize your own handwritten digits!</td>
+                <td></td>
+                <td></td>
             </tr>
-            <tr class="MiddleContent">
-                <td width=40%>
-                    <div class="CanvasContainer" align=center>
+            <tr class="MiddleContent" padding=0 margin=0>
+                <td width=45%>
+                    <div class="CanvasContainer" align=right>
                         <canvas id="drawingCanvas" width="300" height="300"></canvas>   
                     </div>
                 </td>
-                <td width=20% rowspan=2>
+                <td width=10% rowspan=2>
                     <div class="Toolbar" align=center>
                         <button class="RecognizeButton" onclick="SendRequest()">Recognize!</button>
                     </div>
                 </td>
-                <td rowspan=2>
-                    <div class="Result" align=center>
-                        <label id="Answer">-</label>
+                <td width=45% rowspan=2>
+                    <div class="Result" align=left>
+                        <label id="Answer"></label>
                     </div>
                 </td>
             </tr>
             <tr class="BottomContent" height=50px>
               <td>
-                <div class="ClearButtonDiv" align=center>
+                <div class="ClearButtonDiv" align=right>
                   <button class="ClearButton" onclick="clearCanvas()">Clear</button>
                 </div>
               </td>

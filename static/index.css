@@ -1,5 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,400,300);
+
 body {
-    background: white;
+    background: #C9CCD3;
+    margin: 0;
+    padding: 0;
 }
 
 canvas {
@@ -9,10 +14,19 @@ canvas {
 .Result {
     font-size: 200px;
     font-family: 'Trebuchet MS';
+    padding-left: 140px; 
 }
 
 .MainTable {
     width: 100%;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+        
+}
+
+.CanvasContainer {
+    padding-right: 80px;
 }
 
 .MiddleContent {
@@ -21,20 +35,27 @@ canvas {
 }
 
 .Header {
-    font-family: 'Trebuchet MS';
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 42px; 
     background: black;
     text-align: center;
     color: white;
     height: 100px; 
+    margin: 0;
+    padding: 0;
 }
 
 .RecognizeButton {
     font-size: 32px;
-    font-family: 'Trebuchet MS';
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.ClearButtonDiv {
+    padding-right: 200px;
 }
 
 .ClearButton {
     font-size: 20px;
-    font-family: 'Trebuchet MS';
+    font-family: 'Source Sans Pro', sans-serif;
+    
 }
