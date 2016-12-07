@@ -49,11 +49,9 @@ def preprocess_img(image):
     img /= 255
     result = []
     
-    img = img[0]
-    
     for i in img:
         for j in i:
-            if j == 1:
+            if j[0] == 1:
                 result.append(0)
             else:
                 result.append(1)
