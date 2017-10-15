@@ -1,28 +1,34 @@
 # kedr
-Keras-based online digit recognizer
+KEras-based online Digit Recognizer
 
-You just draw your one digit by mouse, and kedr recognize it! Magic! 
+You just draw your digit by mouse, and kedr recognize it! Magic! 
 
-## Docker install & launch
+## Docker install & launch under Ubuntu 16.04
 
-All you need to do is to clone this repo in some folder and type in cmd from there:
+First of all, you need to clone this repo in some folder and type in cmd from there:
 
 ```bash
-docker -t build kedr .
-```
-Then you should check your docker machine ip. For example:
-```
-docker-machine ip
-192.168.99.100
-```
-So it's needed to run backend:
-```bash
-docker run -p 5000:5000 kedr
+sudo docker build . -t kedr
 ```
 
+Then it's needed to run backend:
+```bash
+sudo docker run kedr
+```
+
+To access the app you need to check out the docker container ip. For example:
+```
+sudo docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS              PORTS               NAMES
+3497542a0605        kedr                "python core.py"    About a minute ago   Up About a minute   5000/tcp            hungry_davinci
+
+sudo docker inspect 3497542a0605
+...
+"IPAddress": "172.17.0.2"
+```
 Finally you can access to the app in your browser via link:
 ```
-http://192.168.99.100:5000
+http://172.17.0.2:5000
 ```
 
 Have fun! 
