@@ -3,7 +3,7 @@
 
 You just draw your digit by mouse, and *kedr* recognize it! Magic!
 
-## Docker install & launch under Ubuntu 16.04
+## Docker install & launch
 
 First of all, you need to clone this repo in some folder and type in cmd from there:
 
